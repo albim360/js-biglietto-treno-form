@@ -41,7 +41,7 @@ valoreSconto.innerHTML = "-20%";
 discount = prezzoFinale - (prezzoFinale / 100) * 40;
 sconto.innerHTML = "Over 65";
 valoreSconto.innerHTML = "-40%";
-} else if (!discountSelect || discountSelect.value === "nessuno") {
+} else if (!discountSelect || discountSelect.value === "") {
 discount = prezzoFinale;
 sconto.innerHTML = "Nessuno";
 valoreSconto.innerHTML = "0%";
