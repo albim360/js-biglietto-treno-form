@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prezzo Biglietto</title>
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
     <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     <div class="container">
         <form>
-          <input type="text" placeholder="Nome">
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Messaggio"></textarea>
-          <input type="submit" value="Genera">
-          <a href="#">Annulla</a>
+            <input type="text" placeholder="Nome e Cognome">
+            <input type="number" placeholder="Kilometri da percorrere">
+            <select id="discountSelect">
+              <option value="">Seleziona uno sconto</option>
+              <option value="minorenne">Minorenne</option>
+              <option value="over65">Over 65</option>
+              <option value="nessuno">Nessuno</option>
+            </select>
         </form>
-      </div>
-      <div class="container">
-
-      </div>
+        <div class="button-container">
+            <input type="submit" value="Genera">
+            <a href="#">Annulla</a>
+        </div>
+    </div>
+    <div class="container">
+        <p id="prezzoFinaleDisplay">Il totale verrà visualizzato qui.</p>
+    </div>
     <script src="./js/app.js"></script>
-  </body>
-</html>
+</body>
+</html>    
