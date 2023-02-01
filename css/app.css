@@ -5,77 +5,77 @@
 
 }
 
-a {
-    text-decoration: none;
+body {
+  background-color: rgb(254, 255, 224);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #B81450;
-  }
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .container {
-    width: 80%;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-    border-radius: 15px;
-  }
+.container {
+  margin: 20px auto;
+  width: 90%;
+  margin-bottom: 30px ;
+}
 
-  h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-  }
+.container.result-container {
+  width: 800px; 
+  height: 300px; 
+  border: 2px solid black;
+  background-color: rgb(230, 220, 191);
+}
 
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-  input[type="text"],
-  input[type="number"],
-  textarea {
-    width: 20%%;
-    padding: 10px;
-    font-size: 18px;
-    margin: 20px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    border-radius: 5px;
-  } 
-
-input[type="submit"],
-a,
-button {
-  display: inline-block;
-  width: 5%;
-  margin: 0 10px 20px 10px;
-  padding: 6px;
-  font-size: 18px;
-  border: 2px solid orange;
-  background-color: grey;
-  color: #fff;
+form input[type="text"],
+form input[type="number"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
   border-radius: 5px;
-  cursor: pointer;
+  border: 1px solid lightgray;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  input[type="submit"]:hover {
-    background-color: orange;
-  }
+.button-container input[type="submit"],
+.button-container a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
 
-  .title {
-    color: white;
-    font-size: 40px;
-  }
+.button-container input[type="submit"] {
+  background-color: green;
+  cursor: pointer;
+}
+
+.button-container a {
+  background-color: red;
+}
+
+p {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+p span {
+  font-weight: bold;
+}

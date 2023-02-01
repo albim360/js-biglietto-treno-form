@@ -48,4 +48,5 @@ valoreSconto.innerHTML = "0%";
 }
 
 prezzoFinaleDisplay.innerHTML = "€" + discount;
+discount = discount.toFixed(2);
 });
